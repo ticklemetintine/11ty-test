@@ -1,0 +1,97 @@
+{% extends "layouts/simple.njk" %}
+
+{% block postContent %}
+    
+<div class="spt">
+    <div class="testimonial-area spb">
+        <div class="container">
+            <div class="testimonial-slider bordered">
+            {% for testimonial in collections.testimonials %}
+                
+                <div class="single-slide">
+                    <div class="inner">
+                        <p>{{ testimonial.data.quote }}</p>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="{{ testimonial.data.headshot }}" alt="client">
+                            </div>
+                            <div class="client-data">
+                                <h4>{{ testimonial.data.name }}</h4>
+                                <span>{{ testimonial.data.jobTitle }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="testimonial-area sp bg1">
+    <div class="container">
+        <div class="section-title white">
+            <h2>Clients Review</h2>
+            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+        </div>
+        <div class="testimonial-slider">
+            <div class="single-slide">
+                <div class="inner">
+                    <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="assets/img/client.jpg" alt="client">
+                        </div>
+                        <div class="client-data">
+                            <h4>Jhon Doe</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="inner">
+                    <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="assets/img/client.jpg" alt="client">
+                        </div>
+                        <div class="client-data">
+                            <h4>Jhon Doe</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="inner">
+                    <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="assets/img/client.jpg" alt="client">
+                        </div>
+                        <div class="client-data">
+                            <h4>Jhon Doe</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="inner">
+                    <p>When I was just starting 6th grade I got my first job. Paperboy! Boy, was I excited. At that time I had spent a lot of time actually playing the video official.</p>
+                    <div class="client-info">
+                        <div class="client-img">
+                            <img src="assets/img/client.jpg" alt="client">
+                        </div>
+                        <div class="client-data">
+                            <h4>Jhon Doe</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
