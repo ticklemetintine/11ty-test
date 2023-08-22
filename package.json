@@ -1,17 +1,15 @@
 {
-  "name": "11ty",
+  "name": "11ty-test",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp development & npx @11ty/eleventy --serve"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "netlify-cms-app": "^2.15.33"
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
   }
 }
