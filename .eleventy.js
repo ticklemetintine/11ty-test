@@ -14,7 +14,7 @@ module.exports = function (eleventyConfig) {
             input: 'site',
             pages: 'pages'
         },
-        markdownTemplateEngine: 'njk',
-        htmlTemplateEngine: 'njk'
+        markdownTemplateEngine: 'liquid',
+        htmlTemplateEngine: 'liquid'
     };
 };
