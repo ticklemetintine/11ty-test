@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    {% bookshop "sample" text: "Hello from the sample component" %}
+   {% block content %} {% bookshop_include "page" content_blocks: content_blocks %} {%
+   endblock %}
   </body>
 </html>
