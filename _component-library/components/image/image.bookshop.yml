@@ -2,15 +2,14 @@
 spec:
   structures:
     - content_blocks
-  label: "Section columns"
+  label: "Image"
   description:
   icon:
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
-  column_components: [bookshop:structure:content_blocks]
+  image: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
