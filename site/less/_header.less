@@ -1,0 +1,107 @@
+@color_1: var(--black);
+@color_2: var(--white);
+@font_family_1: var(--font-family);
+@background_color_1: var(--white);
+
+body {
+	font-family: @font_family_1;
+	color: @color_1;
+	font-size: 16px;
+}
+img {
+	max-width: 100%;
+}
+.navbar-area.navbar-nine {
+	background: var(--primary);
+	padding: 10px 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+	.navbar {
+		position: relative;
+		padding: 0;
+		.navbar-toggler {
+			.toggler-icon {
+				width: 30px;
+				height: 2px;
+				background-color: @background_color_1;
+				margin: 5px 0;
+				display: block;
+				position: relative;
+				-webkit-transition: all 0.3s ease-out 0s;
+				-moz-transition: all 0.3s ease-out 0s;
+				-ms-transition: all 0.3s ease-out 0s;
+				-o-transition: all 0.3s ease-out 0s;
+				transition: all 0.3s ease-out 0s;
+			}
+		}
+		.navbar-nav {
+			.nav-item {
+				position: relative;
+				a {
+					display: flex;
+					align-items: center;
+					padding: 11px 16px;
+					color: @color_2;
+					text-transform: capitalize;
+					position: relative;
+					border-radius: 5px;
+					font-weight: 500;
+					-webkit-transition: all 0.3s ease-out 0s;
+					-moz-transition: all 0.3s ease-out 0s;
+					-ms-transition: all 0.3s ease-out 0s;
+					-o-transition: all 0.3s ease-out 0s;
+					transition: all 0.3s ease-out 0s;
+					margin: 14px 0;
+					opacity: 0.7;
+				}
+				a.active {
+					opacity: 1;
+				}
+			}
+		}
+		.navbar-btn {
+			margin-top: 6px;
+			.menu-bar {
+				font-size: 22px;
+				position: relative;
+				overflow: hidden;
+				color: @color_2;
+				height: 40px;
+				width: 40px;
+				line-height: 40px;
+				text-align: center;
+				border: 1px solid rgba(238, 238, 238, 0.425);
+				border-radius: 50%;
+				-webkit-transition: all 0.3s ease-out 0s;
+				-moz-transition: all 0.3s ease-out 0s;
+				-ms-transition: all 0.3s ease-out 0s;
+				-o-transition: all 0.3s ease-out 0s;
+				transition: all 0.3s ease-out 0s;
+			}
+		}
+	}
+	.navbar-brand {
+		margin: 0;
+	}
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+	.navbar-area.navbar-nine {
+		.navbar {
+			.navbar-nav {
+				margin-left: 80px;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.navbar-area.navbar-nine {
+		.navbar {
+			.navbar-nav {
+				margin-left: 80px;
+			}
+		}
+	}
+}
