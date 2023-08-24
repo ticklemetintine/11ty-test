@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ls
+
 npm install
 npm install -g less
 lessc site/less/styles.less styles.css
