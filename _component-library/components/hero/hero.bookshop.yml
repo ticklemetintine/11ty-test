@@ -16,6 +16,7 @@ blueprint:
   button:
     text: Try This Free
     url: /signup
+  background_color: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -24,3 +25,5 @@ preview:
 _inputs:
   description:
     type: markdown
+  background_color:
+    type: color
