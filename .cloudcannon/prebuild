@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 npm install
-npm run lessc site/less/styles.less site/assets/css/styles.css
+lessc site/less/styles.less site/assets/css/styles.css
