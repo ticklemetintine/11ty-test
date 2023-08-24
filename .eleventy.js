@@ -13,6 +13,8 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: 'site',
             pages: 'pages'
-        }
+        },
+        markdownTemplateEngine: 'njk',
+        htmlTemplateEngine: 'njk'
     };
 };
