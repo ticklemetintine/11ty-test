@@ -26,6 +26,7 @@
     "gulp": "^4.0.2",
     "gulp-cleancss": "^0.2.2",
     "gulp-concat": "^2.6.1",
+    "less": "^4.2.0",
     "gulp-order": "^1.2.0",
     "gulp-sourcemaps": "^3.0.0",
     "less-watch-compiler": "^1.16.3",
