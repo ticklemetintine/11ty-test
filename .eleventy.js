@@ -6,7 +6,6 @@ const MarkdownIt = require("markdown-it"),
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter("markdownify", (markdown) => md.render(markdown));
-    eleventyConfig.htmlTemplateEngine = "liquid";
     eleventyConfig.addPlugin(
         pluginBookshop({
             bookshopLocations: ["_component-library"],
@@ -17,7 +16,13 @@ module.exports = function (eleventyConfig) {
     return {
         dir: {
             input: 'site',
-            pages: 'pages'
-        }
+            includes: '_includes',
+            layouts: '_includes/layouts',
+            output: '_site',
+            markdownTemplateEngine: 'njk',
+            htmlTemplateEngine: 'njk',
+            pages: 'pages',
+            uploads: 'assets'
+          }
     };
 };
