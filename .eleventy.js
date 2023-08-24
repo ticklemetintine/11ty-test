@@ -1,7 +1,7 @@
 const pluginBookshop = require("@bookshop/eleventy-bookshop");
 
 module.exports = function (eleventyConfig) {
-    eleventyConfig.htmlTemplateEngine = "njk";
+    eleventyConfig.htmlTemplateEngine = "liquid";
     eleventyConfig.addPlugin(
         pluginBookshop({
             bookshopLocations: ["_component-library"],
@@ -16,8 +16,6 @@ module.exports = function (eleventyConfig) {
             data: "_data",
             output: '_site',
             pages: 'pages'
-        },
-        markdownTemplateEngine: 'njk',
-        htmlTemplateEngine: 'njk'
+        }
     };
 };
