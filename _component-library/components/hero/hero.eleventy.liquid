@@ -1,0 +1,7 @@
+<div class="c-hero">
+  <p class="date">Published on {{ publish_date | date: '%a, %b %d, %y' }}</p>
+  <h1>{{ title }}</h1>
+  {% if subtitle %}
+    <h2>{{ subtitle }}</h2>
+  {% endif %}
+</div>
