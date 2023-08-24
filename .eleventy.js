@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.htmlTemplateEngine = "liquid";
     eleventyConfig.addPlugin(
         pluginBookshop({
-            bookshopLocations: ["component-library"],
+            bookshopLocations: ["_component-library"],
             pathPrefix: "",
         })
     );
