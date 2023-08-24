@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
       "eleventy:serve": "npx eleventy --serve --incremental",
-      "eleventy:build": "npx eleventy",
       "gulp": "gulp",
       "gulp:build": "gulp build",
       "gulp:cache": "gulp cachebust",
-      "start": "cross-env ENVIRONMENT=development npm-run-all --parallel gulp eleventy:serve",
       "build": "cross-env ENVIRONMENT=production npm-run-all gulp:build eleventy:build gulp:cache",
       "PWA": "cross-env ENVIRONMENT=pwa npm-run-all gulp:build eleventy:build",
-      "test": "npx playwright test"
+      "test": "npx playwright test",
+      "bookshop:watch": "bookshop-browser",
+      "eleventy:build": "eleventy",
+      "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
+      "start": "cross-env ENVIRONMENT=development npm-run-all bookshop:watch eleventy:watch  --parallel gulp"
   },
   "keywords": [],
   "author": "",
