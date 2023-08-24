@@ -3,4 +3,4 @@
 npm install
 npm install -g less
 ls
-lessc site/less/styles.less site/assets/css/styles.css
+lessc site/less/styles.less _site/assets/css/styles.css
